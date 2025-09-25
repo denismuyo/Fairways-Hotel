@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Fairways Hotel | Luxury Hotel in Narok</title>
+    <meta name="description" content="Discover the story behind Esikar Gardens, a luxury hotel in Narok blending modern elegance with Kenya's natural beauty.">
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+        }
+        .hero-about {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('esikarhero.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .gold-gradient {
+            background: linear-gradient(135deg, #D4AF37 0%, #F4E5C2 100%);
+        }
+        .timeline-item:not(:last-child):after {
+            content: '';
+            position: absolute;
+            left: 7px;
+            top: 24px;
+            height: calc(100% - 24px);
+            width: 2px;
+            background: #D4AF37;
+        }
+    </style>
+</head>
+<body class="bg-ivory-50 text-gray-800">
+    <!-- Floating Book Now Button -->
+    <div class="fixed bottom-8 right-8 z-50">
+        <a href="book.html" class="gold-gradient hover:bg-opacity-90 text-white font-medium py-3 px-6 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300 flex items-center">
+            <i data-feather="calendar" class="mr-2"></i> Book Now
+        </a>
+    </div>
+
+    <!-- Navigation -->
+<nav class="sticky top-0 w-full z-40 bg-gray-900">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold text-white flex items-center">
+                    <span class="text-gold-500">Fairways </span> Hotel
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-white hover:text-gold-400 transition">Home</a>
+                    <a href="about.html" class="text-gold-400 font-medium transition">About</a>
+                    <a href="rooms.html" class="text-white hover:text-gold-400 transition">Rooms</a>
+                    <a href="dining.html" class="text-white hover:text-gold-400 transition">Dining</a>
+                    <a href="events.html" class="text-white hover:text-gold-400 transition">Events</a>
+                    <a href="gallery.html" class="text-white hover:text-gold-400 transition">Gallery</a>
+                    <a href="contact.html" class="text-white hover:text-gold-400 transition">Contact</a>
+                </div>
+                <button class="md:hidden text-white focus:outline-none">
+                    <i data-feather="menu"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-about h-96 flex items-center justify-center relative mt-16">
+        <div class="container mx-auto px-6 text-center z-10" data-aos="fade-up">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">Our Story</h1>
+            <p class="text-xl text-white max-w-2xl mx-auto">Where luxury meets the untouched beauty of Narok</p>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center mb-20">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10" data-aos="fade-right">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">The Essence of Fairways Hotel</h2>
+                    <p class="text-lg text-gray-600 mb-6">Founded in 2010, Fairways Hotel was born from a vision to create a sanctuary that harmoniously blends luxury hospitality with the breathtaking landscapes of Narok. </p>
+                    <p class="text-lg text-gray-600">Every aspect of our hotel has been thoughtfully designed to celebrate the region's natural beauty while providing world-class amenities and service. From the indigenous plants in our gardens to the locally inspired artwork in our rooms, Fairways Hotel offers an authentic Kenyan experience with international standards of comfort.</p>
+                </div>
+                <div class="md:w-1/2" data-aos="fade-left">
+                    <div class="relative">
+                        <img src="esikar wazungu.jpg" alt="Hotel Exterior" class="rounded-lg shadow-lg w-full">
+                        <div class="absolute -bottom-6 -right-6 bg-white p-4 shadow-lg rounded-lg hidden md:block">
+                            <div class="flex items-center">
+                                <div class="bg-gold-100 p-3 rounded-full mr-4">
+                                    <i data-feather="award" class="text-gold-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold">Kenya Luxury Hotel Award 2022</h4>
+                                    <p class="text-sm text-gray-600">Best Boutique Hotel</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Philosophy -->
+            <div class="py-12 bg-gray-50 rounded-xl px-8 mb-20" data-aos="fade-up">
+                <div class="max-w-4xl mx-auto text-center">
+                    <i data-feather="heart" class="w-12 h-12 text-gold-500 mx-auto mb-6"></i>
+                    <h3 class="text-2xl md:text-3xl font-bold mb-6">Our Philosophy</h3>
+                    <p class="text-xl text-gray-600 mb-8">"At Fairways Hotel, we believe true luxury lies in the harmony of exceptional service, exquisite design, and a deep connection to our natural surroundings. We're not just providing accommodation; we're crafting unforgettable experiences that celebrate the spirit of Kenya."</p>
+                    <div class="flex items-center justify-center">
+                        <img src="A man in a suit with his arms crossed _ Premium AI-generated image.jpg" alt="General Manager" class="w-16 h-16 rounded-full object-cover mr-4">
+                        <div class="text-left">
+                            <h4 class="font-bold">James Kiprono</h4>
+                            <p class="text-sm text-gray-600">General Manager</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Timeline -->
+            <div class="mb-20">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center" data-aos="fade-up">Our Journey</h2>
+                <div class="max-w-3xl mx-auto">
+                    <!-- Timeline Item 1 -->
+                    <div class="relative timeline-item pl-8 mb-12" data-aos="fade-up">
+                        <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-gold-500 border-4 border-gold-200"></div>
+                        <h3 class="text-xl font-bold mb-2">2010: The Vision Begins</h3>
+                        <p class="text-gray-600">Acquired the land and began designing Fairways Hotel with renowned architect Maria Sanchez, focusing on sustainable luxury that complements the Narok landscape.</p>
+                    </div>
+                    <!-- Timeline Item 2 -->
+                    <div class="relative timeline-item pl-8 mb-12" data-aos="fade-up" data-aos-delay="100">
+                        <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-gold-500 border-4 border-gold-200"></div>
+                        <h3 class="text-xl font-bold mb-2">2013: Groundbreaking</h3>
+                        <p class="text-gray-600">Construction began with local artisans crafting many of the hotel's unique features, including hand-carved wooden elements and stonework.</p>
+                    </div>
+                    <!-- Timeline Item 3 -->
+                    <div class="relative timeline-item pl-8 mb-12" data-aos="fade-up" data-aos-delay="200">
+                        <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-gold-500 border-4 border-gold-200"></div>
+                        <h3 class="text-xl font-bold mb-2">2015: Grand Opening</h3>
+                        <p class="text-gray-600">Fairways Hotel welcomed its first guests with 30 rooms and suites, a fine dining restaurant, and the first section of our now-famous gardens.</p>
+                    </div>
+                    <!-- Timeline Item 4 -->
+                    <div class="relative timeline-item pl-8 mb-12" data-aos="fade-up" data-aos-delay="300">
+                        <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-gold-500 border-4 border-gold-200"></div>
+                        <h3 class="text-xl font-bold mb-2">2018: Expansion</h3>
+                        <p class="text-gray-600">Added the Executive Wing with 15 additional suites and our award-winning spa facility, doubling our capacity and amenities.</p>
+                    </div>
+                    <!-- Timeline Item 5 -->
+                    <div class="relative timeline-item pl-8" data-aos="fade-up" data-aos-delay="400">
+                        <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-gold-500 border-4 border-gold-200"></div>
+                        <h3 class="text-xl font-bold mb-2">2022: Recognition</h3>
+                        <p class="text-gray-600">Awarded "Best Boutique Hotel in Kenya" by Kenya Luxury Travel Awards, cementing our reputation as a premier destination.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Section -->
+            <div>
+                <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center" data-aos="fade-up">Meet Our Team</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Team Member 1 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up">
+                        <img src="A man in a suit with his arms crossed _ Premium AI-generated image.jpg" alt="General Manager" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-1">James Kiprono</h3>
+                            <p class="text-gold-600 mb-4">General Manager</p>
+                            <p class="text-gray-600">With over 15 years in luxury hospitality across Africa, James brings unparalleled expertise to Fairways Hotel.</p>
+                        </div>
+                    </div>
+                    <!-- Team Member 2 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                        <img src="African businesswoman smile and portrait for career report or project management in modern office building professional person happy and confident for corporate success work or job in company _ Premium Photo.jpg" alt="Head Chef" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-1">Amina Wambui</h3>
+                            <p class="text-gold-600 mb-4">Head Chef</p>
+                            <p class="text-gray-600">Trained in Paris and Nairobi, Chef Amina creates culinary masterpieces that celebrate Kenyan flavors with global techniques.</p>
+                        </div>
+                    </div>
+                    <!-- Team Member 3 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                        <img src="chef.jpg" alt="Events Director" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-1">David Omondi</h3>
+                            <p class="text-gold-600 mb-4">Events Director</p>
+                            <p class="text-gray-600">David's creative vision and meticulous planning have made Fairways Hotel the premier event venue in Narok.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sustainability -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+                    <img src="esikar river.jpg" alt="Sustainable Practices" class="rounded-lg shadow-lg w-full">
+                </div>
+                <div class="md:w-1/2 md:pl-10" data-aos="fade-left">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Sustainability & Community</h2>
+                    <p class="text-lg text-gray-600 mb-6">At Fairways Hotel, we're committed to responsible tourism that benefits both our guests and the Narok community.</p>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-gold-100 p-3 rounded-full mr-4 flex-shrink-0">
+                                <i data-feather="leaf" class="text-gold-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">Eco-Friendly Operations</h4>
+                                <p class="text-gray-600">Solar panels provide 40% of our energy, and we've implemented comprehensive water recycling and waste reduction programs.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-gold-100 p-3 rounded-full mr-4 flex-shrink-0">
+                                <i data-feather="users" class="text-gold-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">Local Employment</h4>
+                                <p class="text-gray-600">85% of our staff are from Narok County, with ongoing training programs to develop hospitality skills in the community.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-gold-100 p-3 rounded-full mr-4 flex-shrink-0">
+                                <i data-feather="shopping-bag" class="text-gold-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">Supporting Artisans</h4>
+                                <p class="text-gray-600">We source furnishings, artwork, and amenities from local craftspeople, helping preserve traditional techniques.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Fairways Hotel</h3>
+                    <p class="text-gray-400">A sanctuary of luxury in the heart of Narok, where every detail is crafted for your comfort and delight.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="about.html" class="text-gold-400 font-medium transition">About</a></li>
+                        <li><a href="rooms.html" class="text-gray-400 hover:text-white transition">Rooms & Suites</a></li>
+                        <li><a href="dining.html" class="text-gray-400 hover:text-white transition">Dining</a></li>
+                        <li><a href="events.html" class="text-gray-400 hover:text-white transition">Events</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start">
+                            <i data-feather="map-pin" class="mr-2 mt-1 w-4 h-4"></i>
+                            <span>Narok–Bomet Highway, Narok</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="phone" class="mr-2 mt-1 w-4 h-4"></i>
+                            <span>+254 700 072887</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="mail" class="mr-2 mt-1 w-4 h-4"></i>
+                            <span>reservations@fairwayshotel.co.ke</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Subscribe for exclusive offers and updates.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="bg-gray-700 text-white px-4 py-2 rounded-l focus:outline-none focus:ring-2 focus:ring-gold-500 w-full">
+                        <button type="submit" class="gold-gradient hover:bg-opacity-90 text-white px-4 py-2 rounded-r">
+                            <i data-feather="send"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">© 2023 Fairways Hotel. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i data-feather="facebook"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i data-feather="instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i data-feather="twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        // Initialize Feather Icons
+        feather.replace();
+    </script>
+</body>
+</html>

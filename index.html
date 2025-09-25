@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esikar Gardens | Luxury Hotel & Events</title>
+    <meta name="description" content="Experience unparalleled luxury in the heart of Narok. Esikar Gardens offers exquisite accommodations, fine dining, and breathtaking event spaces.">
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+        }
+        .hero-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .nav-transparent {
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+        }
+        .nav-solid {
+            background: #111827;
+        }
+        .gold-gradient {
+            background: linear-gradient(135deg, #D4AF37 0%, #F4E5C2 100%);
+        }
+        .room-card:hover .room-overlay {
+            opacity: 1;
+        }
+        .lightbox-overlay {
+            background: rgba(0, 0, 0, 0.9);
+        }
+    </style>
+</head>
+<body class="bg-ivory-50 text-gray-800">
+    <!-- Floating Book Now Button -->
+    <div class="fixed bottom-8 right-8 z-50">
+        <a href="book.html" class="gold-gradient hover:bg-opacity-90 text-white font-medium py-3 px-6 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300 flex items-center">
+            <i data-feather="calendar" class="mr-2"></i> Book Now
+        </a>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-40 transition-all duration-500 nav-transparent">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold text-white flex items-center">
+                    <span class="text-gold-500">Fairways</span>  Hotel
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-white hover:text-gold-400 transition">Home</a>
+                    <a href="about.html" class="text-white hover:text-gold-400 transition">About</a>
+                    <a href="rooms.html" class="text-white hover:text-gold-400 transition">Rooms</a>
+                    <a href="dining.html" class="text-white hover:text-gold-400 transition">Dining</a>
+                    <a href="events.html" class="text-white hover:text-gold-400 transition">Events</a>
+                    <a href="gallery.html" class="text-white hover:text-gold-400 transition">Gallery</a>
+                    <a href="contact.html" class="text-white hover:text-gold-400 transition">Contact</a>
+                </div>
+                <button class="md:hidden text-white focus:outline-none">
+                    <i data-feather="menu"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center overflow-hidden">
+        <video autoplay muted loop class="hero-video">
+            <source src="esi.mp4" type="video/mp4">
+        </video>
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div class="container mx-auto px-6 z-10 text-center" data-aos="fade-up">
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6">Experience Unparalleled Luxury</h1>
+            <p class="text-xl md:text-2xl text-white mb-10 max-w-3xl mx-auto">In the heart of Narok, where elegance meets nature's splendor</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="rooms.html" class="gold-gradient hover:bg-opacity-90 text-white font-medium py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300">
+                    Explore Rooms
+                </a>
+                <a href="book.html" class="bg-white hover:bg-gray-100 text-gray-900 font-medium py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300">
+                    Book Now
+                </a>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-0 right-0 flex justify-center">
+            <a href="#welcome" class="text-white animate-bounce">
+                <i data-feather="chevron-down" class="w-8 h-8"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Welcome Section -->
+    <section id="welcome" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10" data-aos="fade-right">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Welcome to Fairways Hotel</h2>
+                    <p class="text-lg text-gray-600 mb-6">Nestled in the breathtaking landscapes of Narok, Fairways Hotel is a sanctuary of luxury and tranquility. Our hotel blends contemporary elegance with the natural beauty of Kenya's countryside.</p>
+                    <p class="text-lg text-gray-600 mb-8">Whether you're seeking a romantic getaway, a family vacation, or the perfect venue for your special event, we promise an unforgettable experience.</p>
+                    <a href="about.html" class="inline-block gold-gradient hover:bg-opacity-90 text-white font-medium py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300">
+                        Our Story
+                    </a>
+                </div>
+                <div class="md:w-1/2" data-aos="fade-left">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="rounded-lg overflow-hidden shadow-lg">
+                            <img src="esikargarden.jpg" alt="Garden View" class="w-full h-64 object-cover">
+                        </div>
+                        <div class="rounded-lg overflow-hidden shadow-lg">
+                            <img src="esikarhero.jpg" alt="Luxury Room" class="w-full h-64 object-cover">
+                        </div>
+                        <div class="rounded-lg overflow-hidden shadow-lg">
+                            <img src="esikarchair.jpg" alt="Fine Dining" class="w-full h-64 object-cover">
+                        </div>
+                        <div class="rounded-lg overflow-hidden shadow-lg">
+                            <img src="esikarwedding.jpg" alt="Wedding Event" class="w-full h-64 object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms Preview -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Luxurious Accommodations</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Each of our rooms and suites is designed to provide the ultimate in comfort and style, with breathtaking views of our gardens or the Narok countryside.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Room 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl" data-aos="fade-up" data-aos-delay="100">
+                    <div class="relative">
+                        <img src="esikar bed.jpg" alt="Deluxe Room" class="w-full h-64 object-cover">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                            <h3 class="text-xl font-bold text-white">Deluxe Room</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Spacious rooms with garden views, featuring plush king-size beds and modern amenities.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-gold-600">From $250/night</span>
+                            <a href="rooms.html#deluxe" class="text-gold-600 hover:text-gold-800 font-medium">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Room 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl" data-aos="fade-up" data-aos-delay="200">
+                    <div class="relative">
+                        <img src="esikarroomm.jpg" alt="Executive Suite" class="w-full h-64 object-cover">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                            <h3 class="text-xl font-bold text-white">Executive Suite</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Luxurious suites with separate living areas, premium amenities, and panoramic views.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-gold-600">From $380/night</span>
+                            <a href="rooms.html#executive" class="text-gold-600 hover:text-gold-800 font-medium">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Room 3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-xl" data-aos="fade-up" data-aos-delay="300">
+                    <div class="relative">
+                        <img src="Esikarroom (1).jpg" alt="Honeymoon Suite" class="w-full h-64 object-cover">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-4">
+                            <h3 class="text-xl font-bold text-white">Honeymoon Suite</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600 mb-4">Romantic retreat with private balcony, luxurious amenities, and special touches for couples.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xl font-bold text-gold-600">From $450/night</span>
+                            <a href="rooms.html#honeymoon" class="text-gold-600 hover:text-gold-800 font-medium">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12" data-aos="fade-up">
+                <a href="rooms.html" class="inline-block gold-gradient hover:bg-opacity-90 text-white font-medium py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300">
+                    View All Rooms
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dining Experience -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+                    <img src="esikar wine.jpg" alt="Fine Dining" class="rounded-xl shadow-lg w-full">
+                </div>
+                <div class="md:w-1/2 md:pl-10" data-aos="fade-left">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Exquisite Dining Experiences</h2>
+                    <p class="text-lg text-gray-600 mb-6">Our award-winning chefs create culinary masterpieces using the freshest local ingredients. From our elegant main restaurant to our garden terrace, every meal is an event to remember.</p>
+                    <div class="mb-8">
+                        <div class="flex items-start mb-4">
+                            <div class="bg-gold-100 p-2 rounded-full mr-4">
+                                <i data-feather="coffee" class="text-gold-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">Garden Restaurant</h4>
+                                <p class="text-gray-600">Breakfast, lunch, and dinner with panoramic garden views</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start mb-4">
+                            <div class="bg-gold-100 p-2 rounded-full mr-4">
+                                <i data-feather="glass" class="text-gold-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">The Terrace Bar</h4>
+                                <p class="text-gray-600">Signature cocktails and light fare in a relaxed setting</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-gold-100 p-2 rounded-full mr-4">
+                                <i data-feather="moon" class="text-gold-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">Private Dining</h4>
+                                <p class="text-gray-600">Custom menus for intimate gatherings and special occasions</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="dining.html" class="inline-block gold-gradient hover:bg-opacity-90 text-white font-medium py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300">
+                        Explore Dining
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events & Weddings -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Unforgettable Events</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">From fairy-tale weddings to corporate retreats, our stunning venues and impeccable service create magical moments.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg" data-aos="fade-right">
+                    <img src="esikarwedding.jpg" alt="Wedding Venue" class="w-full h-64 md:h-80 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-3">Weddings</h3>
+                        <p class="text-gray-600 mb-4">Our dedicated wedding team will help you create your dream celebration in our breathtaking gardens or elegant ballroom.</p>
+                        <a href="events.html#weddings" class="text-gold-600 hover:text-gold-800 font-medium">Learn More</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg" data-aos="fade-left">
+                    <img src="Esikareventss.jpg" alt="Corporate Event" class="w-full h-64 md:h-80 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-3">Corporate Events</h3>
+                        <p class="text-gray-600 mb-4">State-of-the-art facilities and exceptional service for meetings, conferences, and team-building retreats.</p>
+                        <a href="events.html#corporate" class="text-gold-600 hover:text-gold-800 font-medium">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center" data-aos="fade-up">
+                <a href="events.html" class="inline-block gold-gradient hover:bg-opacity-90 text-white font-medium py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300">
+                    Plan Your Event
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Guest Experiences</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">What our guests say about their stay at Fairways Hotel</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-xl" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center mb-4">
+                        <div class="text-gold-500 mr-2">
+                            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"Our honeymoon at Fairways Hotel was absolutely magical. The attention to detail, the stunning gardens, and the luxurious suite made our stay unforgettable."</p>
+                    <div class="flex items-center">
+                        <img src="http://static.photos/people/200x200/11" alt="Guest" class="w-12 h-12 rounded-full mr-4 object-cover">
+                        <div>
+                            <h4 class="font-bold">Sarah & Michael</h4>
+                            <p class="text-sm text-gray-500">Honeymoon Guests</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center mb-4">
+                        <div class="text-gold-500 mr-2">
+                            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"The perfect venue for our daughter's wedding. The staff went above and beyond to make every detail perfect. Our guests are still talking about it months later!"</p>
+                    <div class="flex items-center">
+                        <img src="http://static.photos/people/200x200/12" alt="Guest" class="w-12 h-12 rounded-full mr-4 object-cover">
+                        <div>
+                            <h4 class="font-bold">The Johnson Family</h4>
+                            <p class="text-sm text-gray-500">Wedding Hosts</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-xl" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex items-center mb-4">
+                        <div class="text-gold-500 mr-2">
+                            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                            <i data-feather="star" class="w-5 h-5 fill-current"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6">"As a frequent business traveler, I appreciate the combination of luxury and functionality. The conference facilities are top-notch, and the rooms are a peaceful retreat after meetings."</p>
+                    <div class="flex items-center">
+                        <img src="http://static.photos/people/200x200/13" alt="Guest" class="w-12 h-12 rounded-full mr-4 object-cover">
+                        <div>
+                            <h4 class="font-bold">David M.</h4>
+                            <p class="text-sm text-gray-500">Business Traveler</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Contact CTA -->
+    <section class="py-20 bg-gray-900 text-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Find Us in Narok</h2>
+                    <p class="text-lg text-gray-300 mb-8">Located along the Narok–Bomet Highway, just a short distance from the Maasai Mara National Reserve, Fairways Hotel is perfectly positioned for both leisure and adventure.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i data-feather="map-pin" class="text-gold-500 mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-lg">Address</h4>
+                                <p class="text-gray-300">Narok–Bomet Highway, Narok, Kenya</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i data-feather="phone" class="text-gold-500 mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-lg">Phone</h4>
+                                <p class="text-gray-300">+254 700 072887</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i data-feather="mail" class="text-gold-500 mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-lg">Email</h4>
+                                <p class="text-gray-300">reservations@fairwayshotel.co.ke</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 md:pl-10" data-aos="fade-left">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                        <div class="h-64 bg-gray-200">
+                            <!-- Map placeholder - replace with actual map embed -->
+                            <img src="esikarin.jpg" alt="Map Location" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-800 mb-4">Have Questions?</h3>
+                            <a href="contact.html" class="inline-block gold-gradient hover:bg-opacity-90 text-white font-medium py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition-all duration-300">
+                                Contact Us
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Fairways Hotel</h3>
+                    <p class="text-gray-400">A sanctuary of luxury in the heart of Narok, where every detail is crafted for your comfort and delight.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="rooms.html" class="text-gray-400 hover:text-white transition">Rooms & Suites</a></li>
+                        <li><a href="dining.html" class="text-gray-400 hover:text-white transition">Dining</a></li>
+                        <li><a href="events.html" class="text-gray-400 hover:text-white transition">Events</a></li>
+                        <li><a href="gallery.html" class="text-gray-400 hover:text-white transition">Gallery</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Contact</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start">
+                            <i data-feather="map-pin" class="mr-2 mt-1 w-4 h-4"></i>
+                            <span>Narok–Bomet Highway, Narok</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="phone" class="mr-2 mt-1 w-4 h-4"></i>
+                            <span>+254 700 072887</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="mail" class="mr-2 mt-1 w-4 h-4"></i>
+                            <span>reservations@fairwayshotel.co.ke</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Newsletter</h4>
+                    <p class="text-gray-400 mb-4">Subscribe for exclusive offers and updates.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="bg-gray-700 text-white px-4 py-2 rounded-l focus:outline-none focus:ring-2 focus:ring-gold-500 w-full">
+                        <button type="submit" class="gold-gradient hover:bg-opacity-90 text-white px-4 py-2 rounded-r">
+                            <i data-feather="send"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">© 2023 Fairways Hotel. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i data-feather="facebook"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i data-feather="instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <i data-feather="twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 100) {
+                navbar.classList.remove('nav-transparent');
+                navbar.classList.add('nav-solid');
+            } else {
+                navbar.classList.add('nav-transparent');
+                navbar.classList.remove('nav-solid');
+            }
+        });
+
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+
+        // Initialize Feather Icons
+        feather.replace();
+    </script>
+</body>
+</html>
